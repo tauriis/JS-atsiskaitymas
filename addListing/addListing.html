@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="addListing.css" />
+    <script src="addListing.js" defer></script>
+    <title>Loremas</title>
+  </head>
+  <body>
+    <header class="body-header">
+      <nav>
+        <h1><a href="/homePage/index.html">Loremas</a></h1>
+        
+        <span>
+        <span class="go-back-button">
+          <a href="/homePage/index.html">Grįžti atgal</a>
+        </span>
+
+        <a class="sign-in" href="#"
+          ><img
+            class="icon"
+            src="../images/profile-circle-svgrepo-com.svg"
+            alt="Sign-in"
+        /></a>
+      </span>
+      </nav>
+    </header>
+
+    <main class="new-listing">
+      <form id="listingForm">
+
+        <h2 class="form-title">Skelbimo detalės</h2>
+
+        <label for="title">Kompiuterio pavadinimas</label>
+        <input
+          name="title"
+          type="text"
+          id="title"
+          placeholder="Įveskite pavadinimą"
+          minlength="15"
+          maxlength="80"
+          required
+        />
+
+        <label for="listingCity">Miestas</label>
+        <select name="city" id="listingCity" required></select>
+
+        <label for="price">Kaina</label>
+        <input name="price" type="number" id="price" placeholder="€" min="0" required />
+
+        <label for="image">Skelbimo nuotrauka</label>
+        <input
+          name="image"
+          type="text"
+          id="image"
+          placeholder="Nuotraukos nuoroda"
+          required
+        />
+
+        <h2 class="pcSpecs">Kompiuterio specifikacijos</h2>
+        <label for="motherboard">Pagrindinė plokštė</label>
+        <input name="motherboard" type="text" id="motherboard" required />
+
+        <label for="cpu">Procesorius</label>
+        <input name="cpu" type="text" id="cpu" required />
+
+        <label for="gpu">Vaizdo plokštė</label>
+        <input name="gpu" type="text" id="gpu" required />
+
+        <label for="ram">Operatyvinė atmintis (RAM)</label>
+        <input name="ram" type="text" id="ram" required />
+
+        <label for="ssd">Standusis diskas (SSD/HDD)</label>
+        <input name="ssd" type="text" id="ssd" required />
+
+        <label for="psu">Matinimo blokas (PSU)</label>
+        <input name="psu" type="text" id="psu" required />
+
+        <label for="case">Kompiuterio korpusas</label>
+        <input name="case" type="text" id="case" required />
+
+        <button type="submit" class="add-item">Talpinti skelbimą</button>
+      </form>
+
+      <div id="statusMessages"></div>
+    </main>
+  </body>
+</html>

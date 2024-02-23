@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #292929;
+  display: flex;
+  flex-direction: column;
+}
+
+header.body-header {
+  padding: 35px 170px;
+  background-color: #555555;
+}
+header.body-header h1 {
+  font-size: 40px;
+}
+header.body-header h1 a {
+  text-decoration: none;
+  color: #dcdcdc;
+}
+header.body-header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header.body-header nav img {
+  display: flex;
+  align-items: center;
+  width: 30px;
+}
+header.body-header nav span {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+header.body-header nav span .go-back-button {
+  padding: 5px;
+  background-color: green;
+  border-radius: 5px;
+}
+header.body-header nav span .go-back-button a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
+main.new-listing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+main.new-listing form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+  background-color: #555555;
+  padding: 80px;
+  border-radius: 10px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+main.new-listing form h2.form-title {
+  color: #dcdcdc;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+main.new-listing form h2.pcSpecs {
+  color: #dcdcdc;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+main.new-listing form label {
+  margin: 15px 0 5px 0;
+  font-size: 18px;
+}
+main.new-listing form input,
+main.new-listing form select,
+main.new-listing form label {
+  width: 300px;
+  color: #dcdcdc;
+}
+main.new-listing form input#title {
+  background-color: #555555;
+  border-bottom: 1px solid #292929;
+  border-radius: 0;
+}
+main.new-listing form input,
+main.new-listing form select {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.603);
+  border: none;
+  outline: none;
+  background-color: #7e7e7e;
+}
+main.new-listing form input option,
+main.new-listing form select option {
+  color: #dcdcdc;
+}
+main.new-listing form input::-moz-placeholder {
+  font-size: 12px;
+  color: #a7a6a6;
+}
+main.new-listing form input::placeholder {
+  font-size: 12px;
+  color: #a7a6a6;
+}
+main.new-listing .add-item {
+  padding: 8px;
+  background-color: green;
+  border-radius: 5px;
+  margin-top: 25px;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: rgba(255, 255, 255, 0.733);
+  border: none;
+  font-size: 16px;
+}/*# sourceMappingURL=addListing.css.map */

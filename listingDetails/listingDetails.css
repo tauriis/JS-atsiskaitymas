@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #292929;
+  display: flex;
+  flex-direction: column;
+}
+
+section.listing-details-container {
+  display: flex;
+  margin: 0 200px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+section.listing-details-container div.listing-details-background {
+  padding: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #555555;
+  border-radius: 10px;
+}
+section.listing-details-container div.listing-details-background div#listingDetails {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 50px;
+}
+section.listing-details-container div.listing-details-background div#listingDetails .info-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%;
+  justify-content: space-between;
+}
+section.listing-details-container div.listing-details-background div#listingDetails img {
+  width: 750px;
+  height: 650px;
+  border-radius: 5px;
+  border: 1px solid #292929;
+  box-shadow: 2px 4px 6px 6px #292929;
+}
+section.listing-details-container div.listing-details-background div#listingDetails h1, section.listing-details-container div.listing-details-background div#listingDetails h2, section.listing-details-container div.listing-details-background div#listingDetails h3, section.listing-details-container div.listing-details-background div#listingDetails p {
+  color: #dcdcdc;
+}
+section.listing-details-container div.listing-details-background div#listingDetails h4 {
+  font-size: 26px;
+  color: #1b1b1b;
+}
+
+.details-header {
+  display: flex;
+  padding: 35px 200px;
+  background-color: #555555;
+}
+.details-header nav.details-header-nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.details-header nav.details-header-nav .go-back-button {
+  padding: 5px;
+  background-color: green;
+  border-radius: 5px;
+}
+.details-header nav.details-header-nav .go-back-button a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+.details-header nav.details-header-nav #removeListing {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: red;
+  color: rgba(255, 255, 255, 0.788);
+  font-size: 15px;
+  border: none;
+}/*# sourceMappingURL=listingDetails.css.map */
